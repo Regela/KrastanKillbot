@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/bFire"
+        style="@style/left_block_button_style"
+        android:src="@drawable/fire" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/left_block_s_space_between_buttons" />
+
+    <ImageButton
+        android:id="@+id/bShock"
+        style="@style/left_block_button_style"
+        android:src="@drawable/shock" />
+
+</LinearLayout>

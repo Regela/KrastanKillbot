@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0px"
+    android:layout_margin="0px"
+    tools:context="ru.application.rege.krastersomeapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wall"
+        android:layout_margin="0px"
+        android:padding="0px"
+        android:scaleType="fitXY"/>
+
+    <!-- left block -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/left_block_y"
+        android:layout_marginLeft="@dimen/left_block_x">
+
+        <include layout="@layout/left_block_layout" />
+
+    </RelativeLayout>
+
+    <!-- right block -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/right_block_y"
+        android:layout_marginLeft="@dimen/right_block_x">
+
+        <include layout="@layout/right_block_layout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
